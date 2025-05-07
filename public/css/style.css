@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(135deg, #e0f7fa, #fff3e0);
+}
+
+.jumbotron,
+.container {
+    min-height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gambar-kelinci {
+    width: 40px;
+}
+
+.jumbotron::before, .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: .3;
+}
+
+.jumbotron::after, .container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: .4;
+}
