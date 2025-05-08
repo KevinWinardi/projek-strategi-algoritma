@@ -14,5 +14,7 @@
 git clone https://github.com/KevinWinardi/routing-controller-fibonacci.git
 cd routing-controller-fibonacci
 composer install
+cp .env.example .env
+php artisan key:generate
 php artisan serve
 ```
