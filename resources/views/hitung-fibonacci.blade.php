@@ -7,6 +7,7 @@
             </div>
             <button type="submit" class="btn btn-secondary mt-2">Submit</button>
         </form>
+        <h2>Bulan terakhir: {{ end($result) }}</h2>
         <table class="table table-bordered table-striped-columns text-center align-middle">
             <thead class="table-dark">
                 <tr>
@@ -15,7 +16,7 @@
                         <p>Bulan ke-{{ $i }}</p>
                         <p>{{ $result[$i] }}</p>
                         </th>
-                        @endfor
+                    @endfor
                 </tr>
             </thead>
             <tbody>
@@ -24,7 +25,7 @@
                     <td>
                         @for($i=0; $i < $data; $i++)
                             <img class="gambar-kelinci text-center img-fluid d-block mx-auto my-2" src="{{ asset('img/kelinci.png') }}" alt="kelinci">
-                            @endfor
+                        @endfor
                     </td>
                     @endforeach
                 </tr>
