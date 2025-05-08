@@ -2,7 +2,7 @@
     <div class="jumbotron">
         <h1 class="display-4">Temukan Barisan Ajaib Fibonacci!</h1>
         <p class="lead">Masukkan sebuah angka dan lihat bagaimana barisan angka legendaris ini terbentuk — cepat, akurat, dan interaktif.</p>
-        <hr class="my-4">   
+        <hr class="my-4">
         <p class="lead">
             <a class="btn btn-secondary btn-lg" href="{{route('halamanHitungFibonacci', ['suku' => 6]) }}" role="button">Coba Sekarang</a>
         </p>
@@ -22,7 +22,7 @@
     </div>
     <div class="container">
         <h2 class="text-center mb-5">Studi Kasus</h2>
-        <p class="text-center fst-italic fs-2">"Dimulai dengan satu pasang kelinci (satu jantan dan satu betina), berapa pasang kelinci yang akan lahir dalam satu semester, jika setiap bulan setiap kelinci jantan dan betina melahirkan sepasang kelinci baru, dan pasangan kelinci baru itu mulai melahirkan pasangan kelinci tambahan setelah umur satu bulan?"</p>
+        <p class="text-center fst-italic fs-2">"Sepasang kelinci muda (jantan dan betina) ditempatkan di suatu pulau terpencil. Asumsikan kelinci tersebut tidak bereproduksi sampai usianya 2 bulan, dan saat sudah mencapai usia 2 bulan, sepasang kelinci tersebut akan bereproduksi sehingga menghasilkan satu pasangan kelinci kecil setiap bulannya. Asumsikan juga bahwa kelinci-kelinci di pulau itu tidak bisa mati. Berapa banyak pasangan kelinci yang ada di sana saat 6 bulan?"</p>
         <a href="{{ route('halamanHitungFibonacci', ['suku' => 6]) }}" class="btn btn-secondary p-3 fs-5">Hitung Fibonacci</a>
     </div>
 </x-layout>
