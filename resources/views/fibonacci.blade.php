@@ -12,9 +12,9 @@
             @csrf
             <div>
                 <label for="suku" class="form-label">Suku fibonacci</label>
-                <input type="number" class="form-control" id="suku" name="suku" min="0">
+                <input type="number" class="form-control" id="suku" name="suku" min="0" placeholder="Masukkan angka">
             </div>
-            <button type="submit" class="btn btn-secondary mt-2">Submit</button>
+            <button type="submit" class="btn btn-primary mt-2">Submit</button>
         </form>
     </div>
     @else
