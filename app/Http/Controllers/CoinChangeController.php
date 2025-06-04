@@ -9,8 +9,7 @@ class CoinChangeController extends Controller
 {
     public function index()
     {
-        $title = 'Coin Change';
-        return view('coin-change', compact('title'));
+        return view('coin-change');
     }
 
     public function post(Request $request, CoinChangeService $coinChangeService)
@@ -40,6 +39,6 @@ class CoinChangeController extends Controller
         }
 
         // Tampilkan hasil
-        return view('coin-change', compact('title', 'coins', 'target', 'result'));
+        return view('coin-change', compact('coins', 'target', 'result'));
     }
 }

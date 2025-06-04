@@ -9,13 +9,14 @@ class FibonacciController extends Controller
 {
     public function index()
     {
-        $title = 'Fibonacci';
-        return view('fibonacci',compact('title'));
+        return view('fibonacci');
     }
 
     public function post(Request $request, FibonacciService $fibonacciService)
     {
-        $title = 'Fibonacci';
+        $request->validate([
+            'suku' => 'required|integer|min:1',
+        ]);
 
         $suku = $request->suku;
         $result = [];
@@ -24,6 +25,6 @@ class FibonacciController extends Controller
             $result[] = $fibonacciService->fibonacciCount($i);
         }
         
-        return view('fibonacci', compact('title', 'result'));
+        return view('fibonacci', compact('result'));
     }
 }

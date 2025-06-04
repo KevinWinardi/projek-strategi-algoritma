@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot name="title">{{ $title }}</x-slot>
+    <x-slot name="title">Fibonacci</x-slot>
     @if(empty($result))
     <div class="mb-4 p-4 card shadow hidden">
         <h2>Fibonacci</h2>
@@ -12,7 +12,7 @@
             @csrf
             <div>
                 <label for="suku" class="form-label">Suku fibonacci</label>
-                <input type="number" class="form-control" id="suku" name="suku" min="0" placeholder="Masukkan angka">
+                <input type="number" class="form-control" id="suku" name="suku" min="0" placeholder="Masukkan angka" value="{{ old('suku') }}">
             </div>
             <button type="submit" class="btn btn-primary mt-2">Submit</button>
         </form>

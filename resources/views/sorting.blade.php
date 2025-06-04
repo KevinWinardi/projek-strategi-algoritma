@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot name="title">{{ $title }}</x-slot>
+    <x-slot name="title">Sorting</x-slot>
     @if(empty($result))
     <div class="mb-4 p-4 card shadow hidden">
         <h2>Sorting</h2>

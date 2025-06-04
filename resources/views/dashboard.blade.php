@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot name="title">{{ $title }}</x-slot>
+    <x-slot name="title">Dashboard</x-slot>
     <!-- Rectangular Stats Cards -->
     <div class="mb-4">
         <div class="row">

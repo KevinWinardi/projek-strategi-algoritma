@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CoinChangeController;
 use App\Http\Controllers\FibonacciController;
+use App\Http\Controllers\KnapsackController;
 use App\Http\Controllers\SortingController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,6 +40,11 @@ Route::middleware('auth')->group(function () {
     Route::controller(CoinChangeController::class)->group(function(){
         Route::get('/coin-change', 'index')->name('coin-change.index');
         Route::post('/coin-change', 'post')->name('coin-change.post');
+    });
+
+    Route::controller(KnapsackController::class)->group(function(){
+        Route::get('/knapsack', 'index')->name('knapsack.index');
+        Route::post('/knapsack', 'post')->name('knapsack.post');
     });
 
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
