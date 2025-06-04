@@ -23,6 +23,7 @@
             <li><a class="nav-link {{ $title=='Dashboard' ? 'text-warning' : 'text-white' }}" href="{{ route('dashboard') }}"><i class="fa fa-tachometer-alt" aria-hidden="true"></i> Dashboard</a></li>
             <li><a class="nav-link {{ $title=='Fibonacci' ? 'text-warning' : 'text-white' }}" href="{{ route('fibonacci.index') }}"><i class="fa fa-tachometer-alt" aria-hidden="true"></i> Fibonacci</a></li>
             <li><a class="nav-link {{ $title=='Sorting' ? 'text-warning' : 'text-white' }}" href="{{ route('sorting.index') }}"><i class="fa fa-tachometer-alt" aria-hidden="true"></i> Sorting</a></li>
+            <li><a class="nav-link {{ $title=='Coin Change' ? 'text-warning' : 'text-white' }}" href="{{ route('coin-change.index') }}"><i class="fa fa-tachometer-alt" aria-hidden="true"></i> Coin change</a></li>
         </ul>
 
         <a href="{{ route('logout') }}" class="btn btn-danger mx-2 d-flex justify-content-between align-items-center" onclick="return confirm('Apakah kamu yakin ingin keluar?')">
