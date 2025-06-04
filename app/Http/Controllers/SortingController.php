@@ -16,7 +16,7 @@ class SortingController extends Controller
     {
         $request->validate([
             'method' => 'required|string',
-            'array' => 'required|string'
+            'array' => 'required|regex:/^\d+(,\d+)*$/'
         ]);
 
         $array = explode(',', $request->array);

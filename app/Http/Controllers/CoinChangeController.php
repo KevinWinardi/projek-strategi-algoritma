@@ -18,7 +18,7 @@ class CoinChangeController extends Controller
 
         // Validasi input
         $request->validate([
-            'coins' => 'required|string',
+            'coins' => 'required|regex:/^\d+(,\d+)*$/',
             'target' => 'required|integer|min:1',
         ]);
 

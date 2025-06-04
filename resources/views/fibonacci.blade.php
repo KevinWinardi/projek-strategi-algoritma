@@ -12,7 +12,7 @@
             @csrf
             <div>
                 <label for="suku" class="form-label">Suku fibonacci</label>
-                <input type="number" class="form-control" id="suku" name="suku" min="0" placeholder="Masukkan angka" value="{{ old('suku') }}">
+                <input type="number" class="form-control" id="suku" name="suku" min="1" placeholder="Contoh: 5" >
             </div>
             <button type="submit" class="btn btn-primary mt-2">Submit</button>
         </form>

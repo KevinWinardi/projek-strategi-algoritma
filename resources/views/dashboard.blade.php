@@ -1,40 +1,13 @@
 <x-layout>
     <x-slot name="title">Dashboard</x-slot>
-    <!-- Rectangular Stats Cards -->
-    <div class="mb-4">
-        <div class="row">
-            <div class="mb-3 col-md-6 col-lg-3 hidden">
-                <div class="card shadow p-3">
-                    <div>
-                        <h3><i class="fa fa-table"></i> hai </h3>
-                        <p>Total Kategori</p>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-3 col-md-6 col-lg-3 hidden">
-                <div class="card shadow p-3">
-                    <div>
-                        <h3><i class="fa fa-cube"></i> hai </h3>
-                        <p>Total Produk</p>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-3 col-md-6 col-lg-3 hidden">
-                <div class="card shadow p-3">
-                    <div>
-                        <h3><i class="fa fa-address-book"></i> hai </h3>
-                        <p>Total Customers</p>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-3 col-md-6 col-lg-3 hidden">
-                <div class="card shadow p-3">
-                    <div>
-                        <h3><i class="fa fa-heart"></i> hai </h3>
-                        <p>Total Favorit</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="p-4 card shadow mb-4">
+        Projek ini merupakan tugas dari mata kuliah Strategi Algoritma. Adapun beberapa algoritma yang dibahas antara lain:
+        <ul>
+            <li>Fibonacci</li>
+            <li>Sorting</li>
+            <li>Coin Change</li>
+            <li>Knapsack</li>
+            <li>Searching</li>
+        </ul>
     </div>
 </x-layout>

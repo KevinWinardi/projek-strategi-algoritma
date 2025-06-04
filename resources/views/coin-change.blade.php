@@ -8,14 +8,16 @@
     </div>
 
     <div class="mb-4 p-4 card shadow hidden">
-        
-        <form action="{{ route('coin-change.post') }}" method="POST"> 
-            @csrf
-            <label class="form-label">Nilai Koin (contoh: 1000,500,200):</label><br>
-            <input type="text" name="coins" value="{{ old('coins') }}" class="form-control" required><br>
 
-            <label class="form-label">Target Jumlah:</label><br>
-            <input type="number" name="target" value="{{ old('target') }}" class="form-control" required><br>
+        <form action="{{ route('coin-change.post') }}" method="POST">
+            @csrf
+            <label class="form-label">Masukkan angka koin (dipisahkan dengan koma)</label><br>
+            <input type="text" name="coins" class="form-control" placeholder="Contoh: 1000,500,200" required>
+            
+            <br>
+
+            <label class="form-label">Target jumlah (pastikan nilainya lebih besar daripada angka koin terbesar sebelumnya)</label><br>
+            <input type="number" name="target" class="form-control" placeholder="200000" required><br>
 
             <button type="submit" class="btn btn-primary">Proses</button>
         </form>

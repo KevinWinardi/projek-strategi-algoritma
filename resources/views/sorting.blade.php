@@ -11,12 +11,12 @@
         <form method="POST" action="{{ route('sorting.post') }}">
             @csrf
             <div class="mb-3">
-                <label for="array" class="form-label">Masukkan Array (dipisahkan dengan koma)</label>
+                <label for="array" class="form-label">Masukkan angka (dipisahkan dengan koma)</label>
                 <input type="text" name="array" id="array" class="form-control" placeholder="Contoh: 5,3,1,4,2" required>
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Metode Sorting</label>
+                <label class="form-label">Metode sorting</label>
                 <select name="method" class="form-select">
                     <option value="Bubble">Bubble Sort</option>
                     <option value="Selection">Selection Sort</option>

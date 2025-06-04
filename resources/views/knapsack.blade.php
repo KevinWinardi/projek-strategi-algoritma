@@ -12,8 +12,9 @@
             @csrf
             <div>
                 <label for="capacity" class="form-label">Kapasitas</label>
-                <input type="number" class="form-control" id="capacity" name="capacity" min="0" placeholder="Masukkan angka" value="{{ old('capacity') }}">
+                <input type="number" class="form-control" id="capacity" name="capacity" min="0" placeholder="Contoh: 10">
             </div>
+            <p class="text-danger">Data diambil dari database products</p>
             <button type="submit" class="btn btn-primary mt-2">Submit</button>
         </form>
     </div>
