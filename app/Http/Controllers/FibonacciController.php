@@ -2,33 +2,28 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\FibonacciService;
 use Illuminate\Http\Request;
 
 class FibonacciController extends Controller
 {
-    public function halamanBeranda()
+    public function index()
     {
-        return view('beranda');
+        $title = 'Fibonacci';
+        return view('fibonacci',compact('title'));
     }
 
-    public function fibonacci($n)
+    public function post(Request $request, FibonacciService $fibonacciService)
     {
-        if ($n < 2) {
-            return $n;
-        } else {
-            return $this->fibonacci($n - 1) + $this->fibonacci($n - 2);
-        }
-    }
+        $title = 'Fibonacci';
 
-    public function halamanHitungFibonacci(Request $request)
-    {
-        $suku = $request->query('suku');
+        $suku = $request->suku;
         $result = [];
+
         for ($i = 0; $i <= $suku; $i++) {
-            $result[] = $this->fibonacci($i);
+            $result[] = $fibonacciService->fibonacciCount($i);
         }
-        return view('hitung-fibonacci', ['result' => $result]);
+        
+        return view('fibonacci', compact('title', 'result'));
     }
 }
-
-
