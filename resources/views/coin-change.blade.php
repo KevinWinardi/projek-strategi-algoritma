@@ -17,7 +17,7 @@
             <br>
 
             <label class="form-label">Target jumlah (pastikan nilainya lebih besar daripada angka koin terbesar sebelumnya)</label><br>
-            <input type="number" name="target" class="form-control" placeholder="200000" required><br>
+            <input type="number" name="target" class="form-control" placeholder="15500" required><br>
 
             <button type="submit" class="btn btn-primary">Proses</button>
         </form>

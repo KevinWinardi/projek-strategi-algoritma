@@ -11,7 +11,8 @@ class KnapsackController extends Controller
     public function index()
     {
         $title = 'Knapsack';
-        return view('knapsack', compact('title'));
+        $items = Product::all();
+        return view('knapsack', compact('title', 'items'));
     }
 
     public function post(Request $request, KnapsackService $knapsackService)

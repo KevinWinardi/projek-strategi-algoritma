@@ -11,12 +11,12 @@
         <form method="POST" action="{{ route('searching.post') }}">
             @csrf
             <label class="form-label" for="numbers">Masukkan angka (pisahkan dengan koma):</label><br>
-            <input class="form-control" type="text" name="numbers" id="numbers" placeholder="1,3,2,8,4">
+            <input class="form-control" type="text" name="numbers" id="numbers" placeholder="Contoh: 1,3,2,8,4">
 
             <br>
             
             <label class="form-label" for="target">Angka yang dicari</label>
-            <input class="form-control" type="number" name="target" id="target" placeholder="3">
+            <input class="form-control" type="number" name="target" id="target" placeholder="Contoh: 2">
 
             <button class="btn btn-primary mt-2" type="submit">Submit</button>
         </form>
@@ -29,7 +29,7 @@
         <p><strong>Setelah Sort:</strong> {{ implode(', ', $sorted) }}</p>
         <p><strong>Target:</strong> {{ $target }}</p>
         @if ($index !== null)
-        <p style="color:green;">Angka {{ $target }} ditemukan di index ke-{{ $index }} setelah sorting.</p>
+        <p style="color:green;">Angka {{ $target }} ditemukan di index ke-{{ $index }}.</p>
         @else
         <p style="color:red;">Angka {{ $target }} tidak ditemukan.</p>
         @endif

@@ -15,7 +15,35 @@
                 <input type="number" class="form-control" id="capacity" name="capacity" min="0" placeholder="Contoh: 10">
             </div>
             <p class="text-danger">Data diambil dari database products</p>
-            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+            <p class="d-inline-flex gap-1">
+                <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Cek data &#x25BC;
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead>
+
+                            <tr>
+                                <td class="fw-bold">Nama</td>
+                                <td class="fw-bold">Berat</td>
+                                <td class="fw-bold">Nilai</td>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            @foreach($items as $item)
+                            <tr>
+                                <td>{{ $item->name }}</td>
+                                <td>{{ $item->weight }}</td>
+                                <td>{{ $item->value }}</td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <button type="submit" class="d-block btn btn-primary mt-2">Submit</button>
         </form>
     </div>
     @else
