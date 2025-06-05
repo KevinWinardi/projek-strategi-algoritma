@@ -36,6 +36,7 @@ class AuthController extends Controller
         ], [
             'email.required' => 'Email wajib diisi',
             'email.email' => 'Input harus berupa email yang valid',
+            'email.regex' => 'Input harus berupa email yang valid',
             'password.required' => 'Password wajib diisi',
             'password.min' => 'Password harus terdiri dari minimal 8 karakter',
             'password.max' => 'Password tidak boleh melebihi 255 karakter',
@@ -66,6 +67,7 @@ class AuthController extends Controller
             'name.max' => 'Nama tidak boleh melebihi 255 karakter',
             'email.required' => 'Email wajib diisi',
             'email.email' => 'Input harus berupa email yang valid',
+            'email.regex' => 'Input harus berupa email yang valid',
             'email.unique' => 'Email sudah terdaftar sebelumnya',
             'email.max' => 'Email tidak boleh melebihi 255 karakter',
             'password.required' => 'Password wajib diisi',
