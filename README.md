@@ -10,7 +10,7 @@ Projek ini merupakan tugas dari mata kuliah Strategi Algoritma. Adapun beberapa 
 ## Setup
 Menyimpan ke lokal:
 ```
-git clone https://github.com/KevinWinardi/routing-controller-fibonacci.git
+git clone https://github.com/KevinWinardi/projek-strategi-algoritma.git
 cd routing-controller-fibonacci
 ```
 Menyiapkan vendor, enviroment, beserta database migrasi:
