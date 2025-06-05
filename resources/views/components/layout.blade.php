@@ -47,7 +47,7 @@
             <div class="toast__container {{ session('success') ? '' : 'error'}} hidden">
                 <div class="toast__header {{ session('success') ? '' : 'error'}}">
                     <h5>Gagal</h5>
-                    <button class="toast__button" onclick="$(this).closest('.toast__container').remove()">&times;</button>
+                    <button class="toast__button" onclick="this.closest('.toast__container').remove()">&times;</button>
                 </div>
                 @if($errors->any())
                 <ul class="toast__description list">

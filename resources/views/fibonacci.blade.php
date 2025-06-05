@@ -12,7 +12,7 @@
             @csrf
             <div>
                 <label for="suku" class="form-label">Suku fibonacci</label>
-                <input type="number" class="form-control" id="suku" name="suku" min="1" placeholder="Contoh: 5" >
+                <input type="number" class="form-control" id="suku" name="suku" min="1" max="50" placeholder="Contoh: 5" >
             </div>
             <button type="submit" class="btn btn-primary mt-2">Submit</button>
         </form>
@@ -20,7 +20,7 @@
     @else
     <a href="{{ route('fibonacci.index') }}" class="btn btn-secondary mb-4 hidden">Kembali</a>
     <div class="p-4 card shadow hidden">
-        <h2>Jumlah kelinci di bulan terakhir: {{ end($result) }}</h2>
+        <h2>Jumlah suku di bulan terakhir: {{ end($result) }}</h2>
         <table class="table table-bordered table-striped-columns text-center align-middle">
             <thead class="table-dark">
                 <tr>

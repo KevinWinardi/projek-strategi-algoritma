@@ -31,7 +31,7 @@ class AuthController extends Controller
     public function loginPost(Request $request)
     {
         $credentials = $request->validate([
-            'email' => 'required|email',
+            'email' => 'required|email|regex:/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/',
             'password' => 'required|min:8|max:255'
         ], [
             'email.required' => 'Email wajib diisi',
@@ -58,7 +58,7 @@ class AuthController extends Controller
     {
         $credentials = $request->validate([
             'name' => 'required|max:255',
-            'email' => 'required|email|unique:users|max:255',
+            'email' => 'required|email|unique:users|max:255|regex:/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/',
             'password' => 'required|min:8|max:255|confirmed',
             'password_confirmation' => 'required',
         ], [

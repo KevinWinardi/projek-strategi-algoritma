@@ -12,7 +12,7 @@
             @csrf
             <div>
                 <label for="capacity" class="form-label">Kapasitas</label>
-                <input type="number" class="form-control" id="capacity" name="capacity" min="0" placeholder="Contoh: 10">
+                <input type="number" class="form-control" id="capacity" name="capacity" min="1" max="20" placeholder="Contoh: 10">
             </div>
             <p class="text-danger">Data diambil dari database products</p>
             <p class="d-inline-flex gap-1">

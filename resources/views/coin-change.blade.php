@@ -11,7 +11,7 @@
 
         <form action="{{ route('coin-change.post') }}" method="POST">
             @csrf
-            <label class="form-label">Masukkan angka koin (dipisahkan dengan koma)</label><br>
+            <label class="form-label">Masukkan angka koin (dipisahkan dengan koma tanpa spasi)</label><br>
             <input type="text" name="coins" class="form-control" placeholder="Contoh: 1000,500,200" required>
             
             <br>

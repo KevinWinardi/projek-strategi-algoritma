@@ -11,7 +11,7 @@
         <form method="POST" action="{{ route('sorting.post') }}">
             @csrf
             <div class="mb-3">
-                <label for="array" class="form-label">Masukkan angka (dipisahkan dengan koma)</label>
+                <label for="array" class="form-label">Masukkan angka (dipisahkan dengan koma tanpa spasi)</label>
                 <input type="text" name="array" id="array" class="form-control" placeholder="Contoh: 5,3,1,4,2" required>
             </div>
 

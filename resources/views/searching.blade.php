@@ -10,7 +10,7 @@
     <div class="mb-4 p-4 card shadow hidden">
         <form method="POST" action="{{ route('searching.post') }}">
             @csrf
-            <label class="form-label" for="numbers">Masukkan angka (pisahkan dengan koma):</label><br>
+            <label class="form-label" for="numbers">Masukkan angka (pisahkan dengan koma tanpa spasi):</label><br>
             <input class="form-control" type="text" name="numbers" id="numbers" placeholder="Contoh: 1,3,2,8,4">
 
             <br>
